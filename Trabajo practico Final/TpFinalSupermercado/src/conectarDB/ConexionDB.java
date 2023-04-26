@@ -156,8 +156,15 @@ public class ConexionDB {
             System.out.println("Ingrese el apellido del cliente:  ");
             String ClienApe = sc.next(); 
             
-            System.out.println("Ingrese el domicilio del cliente:  ");
-            String ClienDom = sc.next(); 
+            System.out.println("Ingrese el nombre de la calle:  ");
+            String nc=sc.next();
+            
+            System.out.println("Ingrese el numero de la calle:  ");
+            int nr=sc.nextInt();
+            String strNum = Integer.toString(nr);
+            String ClienDom = nc+strNum;
+            
+            
             
             System.out.println("Ingrese el telefono del cliente:  ");
             int ClienTel = sc.nextInt(); 
